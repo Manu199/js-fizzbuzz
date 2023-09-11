@@ -1,0 +1,22 @@
+.dark-blue {
+  background-color: #083B4C !important;
+  
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1389B2;
+  color: black;
+  font-size: 25px;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+
+}
+
+.bg-green {
+  background-color: #0CD6A1;
+
+}
