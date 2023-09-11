@@ -10,13 +10,21 @@
   background-color: #1389B2;
   color: black;
   font-size: 25px;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   margin: 10px;
-
+  font-size: medium;
 }
 
 .bg-green {
   background-color: #0CD6A1;
 
+}
+
+.bg-yellow {
+  background-color: #FFD166;
+}
+
+.bg-pink {
+ background-color: #F0466F;
 }
