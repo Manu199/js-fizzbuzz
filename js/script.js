@@ -1,22 +1,24 @@
 const boxContainer = document.querySelector('.boxes');
-for(let i = 0; i < 100; i++){
+for(let i = 1; i < 100; i++){
   const box = document.createElement('div');
   box.classList.add('box');
-  box.append(i + 1);
+  box.append(i);
 
-  if(!((i + 1) % 3)){
+  if (i % 3 === 0) {
     box.classList.add('bg-green');
-    box.textContent = 'Fizz';
+    box.innerHTML = "Fizz";
+    boxContainer.append(box);
   }
 
-  if(!((i + 1) % 5)){
+  else if (i % 5 === 0) {
     box.classList.add('bg-yellow');
-    box.textContent = 'Buzz';
+    box.innerHTML = "Buzz";
+    boxContainer.append(box);
   }
-
-  if (!((i + 1) % 3) && !((i + 1) % 5)) {
+   if(!(i % 3) && !(i % 5)){
     box.classList.add('bg-pink');
-    box.textContent = 'FizzBuzz';
+    box.innerHTML = "FizzBuzz";
+    boxContainer.append(box);
   }
 
   boxContainer.append(box);
